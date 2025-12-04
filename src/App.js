@@ -1,4 +1,6 @@
 import React from 'react'
+import './App.css';
+
 
 const App = () => {
 
@@ -36,7 +38,7 @@ function del(index){
 } 
 
   return (
-    <div>      
+    <div className='container'>      
       <input type='text' value={input} placeholder='Enter the todo' onChange={(e)=>setInput(e.target.value)} /><br/>
       <button onClick={add}>Add</button> 
 
